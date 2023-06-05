@@ -28,7 +28,7 @@
    DOI: 10.1145/3458817.3476137
 
    Potential is described by:
-   [Maaravi et al, J. Phys. Chem. C 121, 22826-22835 (2017)]
+   [W. Ouyang et al., J. Chem. Theory Comput. 16(1), 666-676 (2020)]
    The definition of normals are the same as that in
    [Kolmogorov & Crespi, Phys. Rev. B 71, 235415 (2005)]
 
