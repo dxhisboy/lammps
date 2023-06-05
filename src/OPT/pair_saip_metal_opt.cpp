@@ -12,7 +12,7 @@
 
 /* ----------------------------------------------------------------------
    This is an optimized version of saip/metal based on the contribution of:
-     author: Wengen Ouyang (Wuhan University)
+     author: Wengen Ouyang (Wuhan University, China)
      e-mail: w.g.ouyang at gmail dot com
 
    Optimizations are done by:
@@ -34,14 +34,11 @@
 #include "pair_saip_metal_opt.h"
 
 #include "atom.h"
-#include "comm.h"
-#include "interlayer_taper.h"
 #include "memory.h"
 
 #include <cstring>
 
 using namespace LAMMPS_NS;
-using namespace InterLayer;
 
 PairSAIPMETALOpt::PairSAIPMETALOpt(LAMMPS *lmp) :
     PairILPGrapheneHBN(lmp), PairSAIPMETAL(lmp), PairILPGrapheneHBNOpt(lmp)

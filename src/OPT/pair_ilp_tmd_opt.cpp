@@ -12,7 +12,7 @@
 
 /* ----------------------------------------------------------------------
    This is an optimized version of ilp/tmd based on the contribution of:
-     author: Wengen Ouyang (Wuhan University)
+     author: Wengen Ouyang (Wuhan University, China)
      e-mail: w.g.ouyang at gmail dot com
 
    Optimizations are done by:
@@ -33,14 +33,11 @@
 #include "pair_ilp_tmd_opt.h"
 
 #include "atom.h"
-#include "comm.h"
-#include "interlayer_taper.h"
 #include "memory.h"
 
 #include <cstring>
 
 using namespace LAMMPS_NS;
-using namespace InterLayer;
 
 PairILPTMDOpt::PairILPTMDOpt(LAMMPS *lmp) :
     PairILPGrapheneHBN(lmp), PairILPTMD(lmp), PairILPGrapheneHBNOpt(lmp)

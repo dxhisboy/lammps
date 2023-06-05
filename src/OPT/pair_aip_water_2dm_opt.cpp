@@ -12,7 +12,7 @@
 
 /* ----------------------------------------------------------------------
    This is an optimized version of aip/water/2dm based on the contribution of:
-     author: Wengen Ouyang (Wuhan University)
+     author: Wengen Ouyang (Wuhan University, China)
      e-mail: w.g.ouyang at gmail dot com
 
    Optimizations are done by:
@@ -22,7 +22,7 @@
      author2: Ping Gao (National Supercomputing Center in Wuxi, China)
      e-mail: qdgaoping at gmail dot com
 
-   Optimizations are described in:
+   Optimization methods are described in:
      Gao, Ping and Duan, Xiaohui, et al:
        LMFF: Efficient and Scalable Layered Materials Force Field on Heterogeneous Many-Core Processors
      DOI: 10.1145/3458817.3476137
@@ -33,21 +33,11 @@
 #include "pair_aip_water_2dm_opt.h"
 
 #include "atom.h"
-#include "citeme.h"
-#include "comm.h"
-#include "error.h"
-#include "force.h"
-#include "interlayer_taper.h"
 #include "memory.h"
-#include "neigh_list.h"
-#include "neigh_request.h"
-#include "neighbor.h"
 
-#include <cmath>
 #include <cstring>
 
 using namespace LAMMPS_NS;
-using namespace InterLayer;
 
 PairAIPWATER2DMOpt::PairAIPWATER2DMOpt(LAMMPS *lmp) :
   PairILPGrapheneHBN(lmp), PairILPTMD(lmp), PairAIPWATER2DM(lmp), PairILPGrapheneHBNOpt(lmp)

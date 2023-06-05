@@ -11,7 +11,7 @@
 ------------------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------------
-   Contributing author: Wengen Ouyang (Tel Aviv University)
+   Contributing author: Wengen Ouyang (Wuhan University, China)
    e-mail: w.g.ouyang at gmail dot com
 
    This is a full version of the potential described in

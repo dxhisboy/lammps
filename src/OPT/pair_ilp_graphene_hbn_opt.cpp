@@ -11,10 +11,26 @@
 ------------------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------------
-   Optimization author1: Ping Gao (National Supercomputing Center in Wuxi, China)
+   This is an optimized version of ilp/graphene/hbn based on the contirubtion of:
+   author: Wengen Ouyang (Wuhan University, China)
+   e-mail: w.g.ouyang at gmail dot com
+
+   Optimizations are done by:
+   author1: Ping Gao (National Supercomputing Center in Wuxi, China) implements the base ILP potential.
    e-mail: qdgaoping at gmail dot com
-   Optimization author2: Xiaohui Duan (National Supercomputing Center in Wuxi, China)
+
+   author2: Xiaohui Duan (Shandong University, China) adjusts the framework to adopt SAIP, TMD, WATER2DM, etc.
    e-mail: sunrise_duan at 126 dot com
+
+   Optimizations are described in:
+   Gao, Ping and Duan, Xiaohui, et al:
+   LMFF: Efficient and Scalable Layered Materials Force Field on Heterogeneous Many-Core Processors
+   DOI: 10.1145/3458817.3476137
+
+   Potential is described by:
+   [Maaravi et al, J. Phys. Chem. C 121, 22826-22835 (2017)]
+   The definition of normals are the same as that in
+   [Kolmogorov & Crespi, Phys. Rev. B 71, 235415 (2005)]
 
    Provides some bugfixes and performance optimizations in this potential.
 */
@@ -23,7 +39,6 @@
 
 #include "atom.h"
 #include "citeme.h"
-#include "comm.h"
 #include "error.h"
 #include "force.h"
 #include "interlayer_taper.h"
